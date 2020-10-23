@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://172.28.50.177:3306/spring_security?characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: Topfine_2301
+  redis: 
+    host: 172.16.50.208
+    port: 6379
+    password: 
+  jpa:
+    database: mysql
+    database-platform: mysql
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL57Dialect
+    show-sql: true
